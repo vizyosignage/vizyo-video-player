@@ -6,7 +6,7 @@ Thanks
 + [Avalonia](https://github.com/AvaloniaUI/Avalonia)
 + [LibMpv.AutoGen](https://github.com/vrjure/LibMPV.AutoGen)
 
-## Ekran Görüntüleri
+Images
 
 ![](images/desktop.png)
 
