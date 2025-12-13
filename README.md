@@ -1,7 +1,7 @@
 # vizyo-video-player
 Video player for Vizyo Digital Signage application.
 
-The goal of this project is to enable a player, added as a user control to the main canvas object in digital signage app, to play videos in multiple ways.
+The goal of this project is to enable multiple video players added as user controls to the main canvas object in a digital signage application to play videos seamlessly.
 
 | Platform | Version   | Status                    |
 | :------- | :-------  | :-------------------------------- |
