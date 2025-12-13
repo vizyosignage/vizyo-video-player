@@ -3,13 +3,13 @@ Video player for Vizyo Digital Signage application.
 
 The goal of this project is to enable a player, added as a user control to the main canvas object in digital signage app, to play videos in multiple ways.
 
-| Platform     | Status                    |
-| :------- | :-------------------------------- |
-| `windows - pc` | ok |
-| `android - tablet` | ok | 
-| `android tv - mibox` | audio ok, video not | 
-| `ubuntu` | to be tested | 
-| `raspberry` | to be tested | 
+| Platform | Version   | Status                    |
+| :------- | :-------  | :-------------------------------- |
+| `windows - pc` | 10, 11| ok |
+| `android - tablet` | 7.1.2 API 25| ok | 
+| `android tv - mibox` | 9.0 API 28| audio ok, video not | 
+| `ubuntu` | | to be tested | 
+| `raspberry` | | to be tested | 
 
 Thanks
 
