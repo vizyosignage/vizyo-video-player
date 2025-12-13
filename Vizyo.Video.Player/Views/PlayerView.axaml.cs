@@ -35,12 +35,12 @@ public partial class PlayerView : UserControl, IDisposable
 
         MediaView.MediaPlayer.EnsureRenderContextCreated();
 
-        MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "mute", "yes" }); // sessiz
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "mute", "yes" }); // sessiz
 
-        string uriString = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"; //"https://test-videos.co.uk/vids/bigbuckbunny/mp4/av1/360/Big_Buck_Bunny_360_10s_1MB.mp4";
+        //string uriString = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"; //"https://test-videos.co.uk/vids/bigbuckbunny/mp4/av1/360/Big_Buck_Bunny_360_10s_1MB.mp4";
         await MediaView.MediaPlayer.ExecuteCommandAsync([MPVMediaPlayer.PlaylistManipulationCommands.Loadfile, Source, "append-play"]);
 
-        MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "loop", "inf" });
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "loop", "inf" });
 
         //SetCurrentValue(PlayingProperty, true);
     }
