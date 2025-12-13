@@ -9,6 +9,6 @@ Thanks
 
 Images
 
-![](images/desktop.png)
+![Desktop (Windows, Linux)](images/desktop.png)
 
-![](images/android.png)
+![Android](images/android.png)
