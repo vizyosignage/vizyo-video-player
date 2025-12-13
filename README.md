@@ -9,6 +9,8 @@ Thanks
 
 Images
 
+Desktop (Windows, Linux)
 ![Desktop (Windows, Linux)](images/desktop.png)
 
+Android
 ![Android](images/android.png)
