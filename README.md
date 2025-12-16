@@ -17,6 +17,8 @@ Thanks
 + [Avalonia](https://github.com/AvaloniaUI/Avalonia)
 + [Mpv](https://github.com/mpv-player/mpv)
 + [LibMpv.AutoGen](https://github.com/vrjure/LibMPV.AutoGen)
++ [Vlc](https://github.com/videolan/vlc)
++ [LibVlcSharp](https://github.com/videolan/libvlcsharp)
 
 Images
 
