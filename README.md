@@ -6,6 +6,7 @@ The goal of this project is to enable multiple video players added as user contr
 | Platform | Version   | Status                    |
 | :------- | :-------  | :-------------------------------- |
 | `windows - pc` | 10, 11| ok |
+| `android - emulator` | 15.0 API 35| ok | 
 | `android - tablet` | 7.1.2 API 25| ok | 
 | `android tv - mibox` | 9.0 API 28| audio ok, video not | 
 | `ubuntu` | | to be tested | 
