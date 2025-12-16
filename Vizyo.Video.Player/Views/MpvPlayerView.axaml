@@ -5,6 +5,6 @@
              xmlns:local="using:Vizyo.Video.Player"
 			 xmlns:mv="using:LibMPVSharp.Avalonia"
 			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="Vizyo.Video.Player.PlayerView">
+             x:Class="Vizyo.Video.Player.MpvPlayerView">
 	<mv:VideoView Name="MediaView"/>
 </UserControl>

@@ -21,9 +21,18 @@
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" />
+    <PackageReference Include="LibVLCSharp.Avalonia" />
+    <PackageReference Include="VideoLAN.LibVLC.Android" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LibMpv\LibMPVSharp.Avalonia\LibMPVSharp.Avalonia.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\MpvPlayerView.axaml.cs">
+      <DependentUpon>MpvPlayerView.axaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

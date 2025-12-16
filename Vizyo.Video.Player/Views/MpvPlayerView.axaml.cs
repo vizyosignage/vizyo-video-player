@@ -8,16 +8,16 @@ using LibMPVSharp.Avalonia;
 
 namespace Vizyo.Video.Player;
 
-public partial class PlayerView : UserControl, IDisposable
+public partial class MpvPlayerView : UserControl, IDisposable
 {
     public MPVMediaPlayer? Player { get; set; } = new();
     public string Source { get; set; } = string.Empty;
 
-    public PlayerView()
+    public MpvPlayerView()
     {
         InitializeComponent();
 
-        Debug.WriteLine("VideoPlayer InitializeComponent");
+        Debug.WriteLine("MpvVideoPlayer InitializeComponent");
 
         MediaView.MediaPlayer = Player;
 
@@ -35,7 +35,20 @@ public partial class PlayerView : UserControl, IDisposable
 
         MediaView.MediaPlayer.EnsureRenderContextCreated();
 
+        // Logları konsola/terminale daha detaylı yazdırır (adb logcat ile yakalamak için)
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "terminal", "yes" });
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "msg-level", "vo=v", "hwdec=v", "cplayer=v" });
+
         //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "mute", "yes" }); // sessiz
+
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "vo", "mediacodec_embed" });
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "vo", "android" });
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "vo", "gpu" });
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "vo", "opengles" });
+
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "hwdec", "mediacodec" });
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "hwdec", "mediacodec-copy" });
+        //MediaView.MediaPlayer.ExecuteCommand(new[] { "set", "hwdec", "no" });
 
         //string uriString = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"; //"https://test-videos.co.uk/vids/bigbuckbunny/mp4/av1/360/Big_Buck_Bunny_360_10s_1MB.mp4";
         await MediaView.MediaPlayer.ExecuteCommandAsync([MPVMediaPlayer.PlaylistManipulationCommands.Loadfile, Source, "append-play"]);
@@ -66,7 +79,7 @@ public partial class PlayerView : UserControl, IDisposable
     {
         if (Player != null)
         {
-            Debug.WriteLine("VideoPlayer OnAttachedToVisualTree");
+            Debug.WriteLine("MpvVideoPlayer OnAttachedToVisualTree");
 
             //MediaView.MediaPlayer = Player;
 
@@ -114,7 +127,7 @@ public partial class PlayerView : UserControl, IDisposable
             //Player?.ExecuteCommand(new[] {"stop"});
             Player?.Dispose();
             Player = null;
-            Debug.WriteLine("VideoPlayer Dispose");
+            Debug.WriteLine("MpvVideoPlayer Dispose");
         }
 
         this.disposed = true;

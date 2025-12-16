@@ -4,6 +4,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
+using LibVLCSharp.Shared;
 using Vizyo.Video.Player.Services;
 using Vizyo.Video.Player.ViewModels;
 using Vizyo.Video.Player.Views;
@@ -14,6 +15,8 @@ public partial class App : Application
 {
     public static App? Instance => Current as App;
     public IUriResolver? UriResolver { get; set; }
+
+    public readonly LibVLC _libVlc = new LibVLC();
 
     public override void Initialize()
     {
